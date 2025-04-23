@@ -1,0 +1,96 @@
+@import "tailwindcss";
+@import '../node_modules/@fontsource/inter/index.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+@theme {
+  --color-primary: #1D9B5E;
+  --color-header: #0A1519;
+  --color-payment-card-bg: #F2F5F7;
+  --color-paragraph-text: oklch(55.1% 0.027 264.364);
+  --breakpoint-xxs: 430px;
+  --breakpoint-xds: 410px;
+  --breakpoint-ds: 320px;
+  --font-urbanist: "Inter", sans-serif;
+}
+
+
+
+@layer base {
+ 
+  body {
+    @apply bg-white;
+  }
+  .smooth {
+    @apply transition-all ease-in-out duration-500 delay-500
+  }
+  .smooth-sm {
+    @apply transition-all ease-in-out duration-200 delay-200
+  }
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .flex-center-col {
+    @apply flex items-center justify-center flex-col;
+  }
+
+}
+
+body {
+  font-family: var(--font-urbanist);
+}
+
+
+.grid-cat-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+/* 
+.grid-cat-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 1rem;
+} */
+
+.grid-cat-pricing-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.grid-cat-pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+}
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.hero-section {
+  background: url(./assets/Hero-section.png);
+}
+.pricing-section {
+  background: url(./assets/PricingPlan.png);
+  width: 100%;
+}
+.cta-section {
+  background: url(./assets/PricingPlan.png);
+  width: 100%;
+}
+
+
+.container-wrapper {
+  margin: 0px auto 0px auto;
+  max-width: 90%;
+  height: auto;
+}
