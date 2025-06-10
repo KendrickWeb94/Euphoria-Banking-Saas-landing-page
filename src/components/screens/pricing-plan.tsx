@@ -12,7 +12,7 @@ export const PricingPlan = () => {
       <section className="container-wrapper py-16 w-full">
         <div className="w-full space-y-6 flex items-center justify-center flex-col">
           <SectionBadge id={4} name="Pricing Plans" />
-          <h1 className="text-center text-balance font-semibold leading-[1.1] text-4xl text-white sm:text-5xl max-w-3xl">
+          <h1 className="text-center text-balance font-semibold leading-[1.1] text-3xl text-white sm:text-4xl max-w-3xl">
             Select a plan that will empower your business growth
           </h1>
           <p className="text-white/70 text-center max-w-xl font-regular">
@@ -34,7 +34,7 @@ export const PricingPlan = () => {
               Yearly
             </div>
           </button>
-          <div className="grid-cat-pricing-cards w-full">
+          <div className="grid items-center grid-cols-1 md:grid-cols-2 justify-center w-full lg:grid-cols-3 gap-8 ">
             <PricingCard
               id={0}
               plan={"Starter Plan"}

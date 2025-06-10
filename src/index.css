@@ -20,19 +20,23 @@ html {
 
 
 @layer base {
- 
+
   body {
     @apply bg-white;
   }
+
   .smooth {
     @apply transition-all ease-in-out duration-500 delay-500
   }
+
   .smooth-sm {
     @apply transition-all ease-in-out duration-200 delay-200
   }
+
   .flex-center {
     @apply flex items-center justify-center;
   }
+
   .flex-center-col {
     @apply flex items-center justify-center flex-col;
   }
@@ -49,6 +53,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
 }
+
 /* 
 .grid-cat-section {
   display: grid;
@@ -63,12 +68,16 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .grid-cat-pricing-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1rem;
   justify-content: center;
+  align-items: center;
+  width: 100%;
 }
+
 .grid-footer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -79,10 +88,12 @@ body {
 .hero-section {
   background: url(./assets/Hero-section.png);
 }
+
 .pricing-section {
   background: url(./assets/PricingPlan.png);
   width: 100%;
 }
+
 .cta-section {
   background: url(./assets/PricingPlan.png);
   width: 100%;
